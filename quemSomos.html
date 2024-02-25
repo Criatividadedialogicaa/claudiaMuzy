@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre os autores</title>
+    <link rel="stylesheet" href="queSomo.css">
+    <link rel="shortcut icon" href="LOGO CLAUDIA.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeca">
+        <div>
+  
+            <a href="index.html"><img class="imgcabe" src="LOGO CLAUDIA.png" alt="img-cabe"></a>
+        </div>
+        <div class="iten_cabe">
+            <a class="itens" href="index.html"><p class="itens">Principal </p></a>
+            <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+            <div>
+                <div onclick="drop()" class="setaReta">
+                    <p id="itenDrop" class="itens">Oficinas</p>
+                    <img id="imagemSeta" style="width: 20px;" src="seta-para-baixo (1).png" alt="">
+                </div>
+                <ul id="dropdown" class="drop">
+                    <a style="text-decoration:none ; color: black" href="modulo1.html"><li class="hoverItens">Módulo 1</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo2.html"><li class="hoverItens">Módulo 2</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo3.html"><li class="hoverItens">Módulo 3</li></a>
+                </ul>
+            </div>
+            <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+            <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+        </div>
+        <div class="btn-abrir-botao" onclick="abrir()" id="abrir-menu">
+            <img class="invi" src="list.svg" alt="">
+        </div>
+        <div  class="abrir-menu" id="menu-mobile">
+            <div onclick="fechar()" class="btn-fechar">
+                <img src="x-lg.svg" alt="">
+            </div>
+            <div>
+                <a class="itens" href="index.html"><p class="itens">Principal</p></a>
+                <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+          
+                <a class="itens" href="modulo1.html"><p class="itens">Módulo 1</p></a>
+                <a class="itens" href="modulo2.html"><p class="itens">Módulo 2</p></a>
+                <a class="itens" href="modulo3.html"><p class="itens">Módulo 3</p></a>
+                <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+                <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+            </div>
+        </div>
+        <div id="overlay" class="overlay-menu">
+        </div>
+    </header>
+    
+    <main>
+        <section class="principal">
+            <img class="imgP" src="autor1.jpg" alt="pesssoa">
+        
+            <section class="texto3">
+                <h3 class="sobre">Professora Claudia Muzy</h3>
+                <p class="textoPrincipal">Mestranda do Mestrado Profissional em Letras -Profletras-IFES Vitória (2022-2024).Pós-Graduada em Língua Portuguesa (2014-2015).Aperfeiçoamento em Educação,Saúde e Meio Ambiente para uma comunidade de aprendizagem-UFMG(2000-2006) em Letras-UEMG(1999-2003) e Artes visuais pela Ítalo (2020-2021).Atua como professora de Língua Portuguesa na Secretaria de Estado de Educação de Minas Gerais.É professora de Redação e realiza monitoria em produção de textos e projetos de extensão</p>
+            </section>
+            <section class="texto2">
+                <h3 class="sobre">Detalhes</h3>
+                <div class="detalhe">
+                    <h4>Área de atuação:</h4>
+                    <p>Professora regente de Língua Portuguesa/SEE-MG</p> 
+                </div>
+                <div class="detalhe">
+                    <h4>Local onde trabalho:</h4>
+                    <p>Caparaó-Minas Gerais</p>
+                </div>
+                <div class="detalhe">
+                    <h4>O programa:</h4>
+                    <p>Mestrado Profissional em Letras</p>
+                </div>
+    
+            </section>
+        </section>
+
+        <section class="principal">
+            <img class="imgP" src="imgorientador.jpg" alt="pessoa2">
+        
+            <section class="texto3">
+                <h3 class="sobre">Rafael Ferreira</h3>
+                <p class="textoPrincipal">Doutor em Linguística pela Universidade Federal do Espírito Santo com doutorado-sanduíche na Universidade de Coimbra (Portugal). Mestre em Linguística pela Universidade Federal do Espírito Santo. Especialista em Estudos da Linguagem (Faculdade SABERES - Vitória-ES) e em Linguística e Língua Portuguesa (Centro Universitário Araraquara - Uniara). Graduado em Letras Português, Inglês e respectivas Literaturas (Faculdade SABERES). Professor do Ensino Básico, Técnico e Tecnológico de Língua Portuguesa e Literaturas Portuguesa e Brasileira no Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo (IFES).</p>
+            </section>
+            <section class="texto2">
+                <h3 class="sobre">Detalhes</h3>
+                <div class="detalhe">
+                    <h4>Área de atuação:</h4>
+                    <p>Professor do Instituto Federal do Espirto Santo</p> 
+                </div>
+                <div class="detalhe">
+                    <h4>Local onde trabalho:</h4>
+                    <p>IFES/Campus Viana-ES</p>
+                </div>
+                <div class="detalhe">
+                    <h4>Local de formação:</h4>
+                    <p>Universidade Federal do Espírito Santo</p>
+                </div>
+                <div class="detalhe">
+                    <h4>Orientador</h4>
+             
+                </div>
+    
+            </section>
+        </section>
+    </main>
+    <footer class="baixo">
+        <div class="backfo">
+            <div>
+                <p class="letra">Conheça meu trabalho </p>
+                <section class="imagens">
+                    <a href="https://www.instagram.com/criatividadedialogica2/"><img class="img_footer" src="instagram.png" alt="inst"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556772900520&mibextid=ZbWKwL"><img class="img_footer" src="facebook.png" alt="facebook"></a>
+                    <a href="https://open.spotify.com/show/3XS2YpdyxJepp1uchK2nWR?si=AaGDQTd-TJqRi4_aApYYJw&nd=1&dlsi=cd945a7f5d904057"><img class="img_footer" src="spotify.png" alt="spotify"></a>
+                </section>
+            </div>
+            <div class="credi">
+                <p class="letra">Créditos</p>
+                <p class="creditos">Desenvolvedor: Samuel Muzy Fernandes</p>
+                <a class="creditos" href="https://storyset.com/social-media">Social media illustrations by Storyset</a>
+                <p class="creditos">Imagem de <a class="creditos" href="https://pixabay.com/pt/users/gdj-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Gordon Johnson</a> por <a class="creditos" href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Pixabay</a></p>
+                <a class="creditos" href="https://www.flaticon.com/br/icones-gratis/instagram" title="instagram ícones">Instagram ícones criados por Freepik - Flaticon</a>
+            </div>
+            <div class="ifs">
+                <img class="img2" src="ifs.png" alt="logo">
+                <img class="img2" src="logo.png" alt="logo">
+            </div>
+            
+        </div>
+    </footer>
+    <script src="quemSomos.js"></script>
+</body>
+</html>

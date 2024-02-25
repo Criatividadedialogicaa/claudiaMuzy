@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+.imgcabe{
+    width: 120px;
+    height: 113px;
+}
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    position: sticky;
+    top: 0; /* Define a posição do topo como 0 para fixar no topo da tela */
+    z-index: 1000; /* O z-index ajuda a garantir que a barra fixa esteja acima de outros elementos */
+    border-bottom: solid 1px gray;
+}
+
+.iten_cabe{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 10%;
+    align-items: center;
+}
+.itens{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.itens:hover{
+    color: #dd6798; 
+}
+.drop{
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 999;
+    width: 7%;
+    border: solid 1px black;
+}
+
+.hoverItens:hover{
+    background-color: #f379ac;
+}
+.setaReta{
+    display: flex;
+    flex-direction: row;
+    
+}
+.seta{
+    width: 20px;
+}
+.drop li{
+    padding: 15%;
+    background-color: #f6d3e2;
+    z-index: 999;
+    display: block;
+    text-align: center;
+    
+}
+.drop:hover{
+    display: block;
+}
+/*menu mobile*/
+.menu-mobile{
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+    overflow: hidden;
+    transition: 5.s;
+}
+.abrir-menu{
+    width: 0%;    
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 5.s;
+}
+.menu-mobile div a{
+    text-align: right;
+}
+.btn-abrir-botao img{
+    width: 0px;
+}
+.menu-mobile .btn-fechar img{
+    width: 10%;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+.menu-mobile div a p{
+    color: black;
+    background-color: #f6d3e2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+.menu-mobile div a p:hover{
+    background-color: #dd6798;
+    color: black;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+.invi{
+    padding-right: 15px;
+}
+/*main*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inicial{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 4%;
+    background-color: white;
+}
+.links{
+    text-decoration: none;
+}
+.tituloI{
+    font-size: 40px;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+.textoI{
+    font-size: 25px;
+    padding: 2%;
+    font-family: 'Alegreya', serif;
+}
+.segundaP{
+    width: 100%;
+    background-color: #fdeaf0;
+}
+.sub-itens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+   
+}
+.parte2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdeaf0;
+    padding: 5%;
+    
+}
+.tituloMou{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    padding-top: 3%;
+}
+.divMo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.tituloMo{
+    font-size: 25px;
+    font-family: 'Arvo', serif;
+}
+.tituloMo1{
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+}
+.perguntas{
+    padding-top: 3%;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Alegreya', serif;
+}
+.imagemIlustrativa{
+    width: 40%;
+    height: 27%;
+    margin-left: 5%;
+}
+.secG{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 6%;
+}
+.suTitulo{
+    font-size: 27px;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    font-family: 'Arvo', serif;
+}
+.textom{
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+}
+.titulozinho{
+    font-size: 25px;
+    margin-top: 3%;
+    font-family: 'Arvo', serif;
+}
+.tituloBig{
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+}
+.textoG{
+    font-size: 25px;
+    width: 100%;
+    font-family: 'Alegreya', serif;
+}
+.divG{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.perguntas2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f6d3e2;
+    padding: 1% 0% 1% 0%;
+}
+.perguntasDiv{
+    background-color: white;
+    width: 90%;
+    padding: 1%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textoDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    padding: 5% 10% 5% 10%;
+}
+.perguntasT{
+    font-size: 25px;
+    width: 100%;
+    font-family: 'Alegreya', serif;
+    
+}
+.tituloMenor{
+    font-size: 35px;
+    padding-top: 3%;
+    font-family: 'Arvo', serif;
+}
+.suTitulo2{
+    font-size: 30px;
+    padding-bottom: 1%;
+    padding-top: 8%;
+    font-family: 'Arvo', serif;
+}
+/*footer*/
+.baixo{
+    background-color: white;
+    height: 100%;
+    padding-left: 1%;
+    padding-top: 1%;
+    gap: 2px;
+    padding-bottom: 2%;
+}
+.letra{
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+.img_footer{
+    padding-top: 1%;
+    width: 50px;
+    background-color: white;
+}
+.imagens{
+    display: flex;
+    margin-top: 1%;
+    gap: 10px;
+    background-color: white;
+}
+.iten3{
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.backfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creditos{
+    text-decoration: none;
+}
+.img2{
+    width: 100px;
+}
+.ifs{
+    display: flex;
+    padding-right: 3%;
+    justify-content: center;
+}
+@media screen and (max-width: 1195px){
+    .imgcabe{
+        width: 19%;
+        height: 10%;
+    } 
+    .invi{
+        width: 40px; /*cabecario*/
+    }
+    .btn-abrir-botao img{
+        width: 40px;            /*cabecario*/
+    }
+    .iten_cabe{
+        display: none;
+    }
+    .img2{
+        width: 12%;
+    }
+    .divImagem{
+        height: 60vh;
+    }
+    /*main*/
+    .perguntas{
+        width: 98%;
+        padding: 3%;
+    }
+    .divMo{
+        width: 100%;
+    }
+    .sub-itens{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .imagemIlustrativa{
+        width: 95%;
+        padding: 0%;
+    }
+    .tituloMo{
+        font-size: 23px;
+        text-align: center;
+        padding-bottom: 5%;
+        width: 100%;
+        padding: 0%;
+    }
+    .tituloMo1{
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 4%;
+    }
+    .inicial{
+        width: 87%;
+        padding: 5% 1% 5% 1%;
+        
+    }
+    .tituloI{
+        font-size: 30px;
+        padding-bottom: 3%;
+    }
+    .textoI{
+        font-size: 20px;
+    }
+    .titulo2{
+        padding:3% 0% 3% 0%;
+        text-align: center;
+    }
+    .parte2{
+        flex-direction: column;
+    }
+    .tituloBig{
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+    .titulozinho{
+        font-size: 20px;
+    }
+    .secG{
+        width: 87%;
+    }
+    .textoG{
+        font-size: 20px;
+    }
+    .perguntasDiv{
+        width: 95%;
+    }
+    .tituloMenor{
+        font-size: 30px;
+        text-align: center;
+    }
+    .perguntasT{
+        font-size: 20px;
+
+    }
+    .textoDiv{
+        width: 88%;
+        padding: 5% 0% 5% 0%;
+    }
+    /*footer*/
+    .baixo{
+        height: 100%;
+    }
+    .backfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 20px;
+    }
+    .baixo{
+        text-align: center;
+    }
+    .imagens{
+        justify-content: center;
+    }
+    .img2{
+        width: 16%;
+    }
+}

@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fce6ef;
+}
+.imgcabe{
+    width: 120px;
+    height: 113px;
+}
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    position: sticky;
+    top: 0; /* Define a posição do topo como 0 para fixar no topo da tela */
+    z-index: 1000; /* O z-index ajuda a garantir que a barra fixa esteja acima de outros elementos */
+    border-bottom: solid 1px gray;
+}
+
+.iten_cabe{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 10%;
+    align-items: center;
+}
+.itens{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.itens:hover{
+    color: #dd6798; 
+}
+.drop{
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 999;
+    width: 7%;
+    border: solid 1px black;
+}
+
+.hoverItens:hover{
+    background-color: #f379ac;
+}
+.setaReta{
+    display: flex;
+    flex-direction: row;
+    
+}
+.seta{
+    width: 20px;
+}
+.drop li{
+    padding: 15%;
+    background-color: #f6d3e2;
+    z-index: 999;
+    display: block;
+    text-align: center;
+    
+}
+.drop:hover{
+    display: block;
+}
+/*menu mobile*/
+.menu-mobile{
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+    overflow: hidden;
+    transition: 5.s;
+}
+.invi{
+    padding-right: 15px;
+}
+.abrir-menu{
+    width: 0%;    
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 5.s;
+}
+.menu-mobile div a{
+    text-align: right;
+}
+.btn-abrir-botao img{
+    width: 0px;
+    
+}
+.menu-mobile .btn-fechar img{
+    width: 10%;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+.menu-mobile div a p{
+    color: black;
+    background-color: #f6d3e2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+.menu-mobile div a p:hover{
+    background-color: #dd6798;
+    color: black;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+/*principal*/
+.princi{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+.prin{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: start;
+    align-items: center;
+    padding: 5%;
+    color: #343436;
+    border-radius: 3%;    
+}
+.imgPrin{
+    width: 100%;
+    height: 60vh;
+}
+.imgPrin2{
+    width: 100%;
+    height: 60vh;
+}
+.refere{
+    font-size: 13px;
+}
+.prin h2{
+    color: black;
+}
+.texto_principal{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    gap: 20px;  
+}
+.texto_principal h3{
+    font-family: 'Arvo', serif;
+    color: #000;
+}
+.texto1{
+    font-family:'Arvo', serif ;
+}
+.textoP{
+    width: 100%;
+    font-family: 'Alegreya', serif;
+}
+/*footer*/
+.baixo{
+    background-color: white;
+    height: 100%;
+    padding-left: 1%;
+    padding-top: 1%;
+    gap: 2px;
+    padding-bottom: 2%;
+}
+.letra{
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+.img_footer{
+    padding-top: 1%;
+    width: 50px;
+    background-color: white;
+}
+.imagens{
+    display: flex;
+    margin-top: 1%;
+    gap: 10px;
+    background-color: white;
+}
+.iten3{
+    margin-top: 5%;
+    font-size: 25px;
+}
+.backfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creditos{
+    text-decoration: none;
+}
+.img2{
+    width: 100px;
+}
+.ifs{
+    display: flex;
+    padding-right: 3%;
+    justify-content: center;
+}
+@media screen and (max-width: 1195px){
+    .imgcabe{
+        width: 19%;
+        height: 10%;
+    } 
+    .principal{
+        flex-direction: column-reverse;
+    }
+    .invi{
+        width: 40px; /*cabecario*/
+    }
+    .btn-abrir-botao img{
+        width: 40px;            /*cabecario*/
+    }
+    .iten_cabe{
+        display: none;
+    }
+    .img2{
+        width: 12%;
+    }
+    .baixo{
+        height: 30vh;
+    }
+    /*main*/
+    .texto_principal{
+        width: 95%;
+    }
+    .prin{
+        border-radius: 0%;
+        font-size: 20px;
+        text-align: start;
+        margin-bottom: 3%;
+    }
+    .imgPrin{
+        height: 50vh;
+    }
+    .imgPrin2{
+        height: 40vh;
+    }
+    /*footer*/
+    .backfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 20px;
+    }
+    .baixo{
+        text-align: center;
+        height: 100%;
+    }
+    .imagens{
+        justify-content: center;
+    }
+    .img2{
+        width: 16%;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1</title>
+    <link rel="stylesheet" href="modulo1.css">
+    <link rel="shortcut icon" href="LOGO CLAUDIA.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeca">
+        <div>
+            <a href="index.html"><img class="imgcabe" src="LOGO CLAUDIA.png" alt="img-cabe"></a>
+        </div>
+        <div class="iten_cabe">
+            <a class="itens" href="index.html"><p class="itens">Principal </p></a>
+            <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+            <div>
+                <div onclick="drop()" class="setaReta">
+                    <p id="itenDrop" class="itens">Oficinas</p>
+                    <img id="imagemSeta" style="width: 20px;" src="seta-para-baixo (1).png" alt="">
+                </div>
+                <ul id="dropdown" class="drop">
+                    <a style="text-decoration:none ; color: black" href="modulo1.html"><li class="hoverItens">Módulo 1</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo2.html"><li class="hoverItens">Módulo 2</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo3.html"><li class="hoverItens">Módulo 3</li></a>
+                </ul>
+            </div>
+            <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+            <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+        </div>
+        <div class="btn-abrir-botao" onclick="abrir()" id="abrir-menu">
+            <img class="invi" src="list.svg" alt="icone">
+        </div>
+        <div class="abrir-menu" id="menu-mobile">
+            <div onclick="fechar()" class="btn-fechar">
+                <img src="x-lg.svg" alt="">
+            </div>
+            <div>
+                <a class="itens" href="index.html"><p class="itens">Principal</p></a>
+                <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+                <a class="itens" href="modulo1.html"><p class="itens">Módulo 1</p></a>
+                <a class="itens" href="modulo2.html"><p class="itens">Módulo 2</p></a>
+                <a class="itens" href="modulo3.html"><p class="itens">Módulo 3</p></a>
+                <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+                <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+            </div>
+        </div>
+        <div id="overlay" class="overlay-menu">
+        </div>
+    </header>
+    <main>
+        <section class="segundaP">
+            <div class="divGrande">
+                <div class="sub-itens">
+                    <img class="imagemIlustrativa" src="Podcast-pana.png" alt="imagemPrincipal">
+                    <div class="divMo">
+                        <p class="tituloMo1">Módulo 1</p>
+                        <p class="tituloMo">Oficina 1: Prazer, eu sou o podcast</h3>
+                        <p class="perguntas">Objetivos: Utilizar um gênero contemporâneo para incentivar a interação entre os alunos, explorar os diversos modos de interação oral por meio da crônica, desenvolver a leitura e estimular a interpretação textual. </p>
+                        <p class="perguntas">BNCC:<a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef35lp07">EF35LP07</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef35lp09#:~:text=A%20habilidade%20EF35LP09%20consiste%20em,as%20caracter%C3%ADsticas%20do%20g%C3%AAnero%20textual"> EF35LP09</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef35lp26#:~:text=A%20habilidade%20EF35LP26%20consiste%20em,discurso%20indireto%20e%20discurso%20direto"> EF35LP26</a> </p>
+                        <p class="perguntas">Tempo: 04 aulas de 50 minutos</p>
+                        <h2 class="tituloMou">Orientação para o professor</h2>
+                        <p class="perguntas">Solicite aos alunos que respondam às questões do passeio dialógico antes da leitura do texto. Leiam a crônica e a seguir promova uma discussão a partir do passeio dialógico e das respostas coletadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="inicial">
+            <div>
+                <h1 class="tituloI">Passeio dialógico</h1>
+                <p class="textoI">Você costuma ouvir podcasts? Se sim, quais são os seus favoritos?</p>
+                <p class="textoI">Como você descobriu o mundo dos podcasts e o que mais te atrai nesse formato?</p>
+                <p class="textoI">Já considerou criar o seu próprio podcast? Se sim, sobre qual tema seria?</p>
+                <p class="textoI">Quais são as características de um podcast que mais chamam sua atenção?</p>
+                <p class="textoI">Como você acredita que os podcasts tem impactado a forma como as pessoas consomem informações e entretenimento?</p>
+            </div>
+        </section>
+        <div class="parte2">
+            <img class="imagemIlustrativa" src="pods.png" alt="segundaImagem">
+            <div>
+                <h3 class="tituloBig">II- Explorando gênero</h3>
+                <p class="titulozinho">Navegar é preciso, viver não é preciso.</h2>
+                <p class="titulozinho">Então, vamos Pessoa, navegar pela net...</h2>
+            </div>
+        </div>
+        <section class="secG">
+            <div class="divG">
+                <h4 class="suTitulo">PRAZER, SOU O PODCAST!</h4>
+                <p class="textoG">Bem-vindos, amigos da onda sonora! Hoje, nesta aula de Português, vamos sintonizar nossos pensamentos na intersecção mágica entre o velho e o novo, entre o clássico e o moderno: o rádio e o podcast.</p>
+                <p class="textoG">Imaginem, caros ouvintes, que o rádio, com sua voz cativante e alcance abrangente, desempenha um papel essencial na evolução do podcast. Assim como as ondas radiofônicas viajavam pelos céus, levando narrativas e melodias para lares distantes, embalava corações, animava e preenchia as horas monótonas e cansativas de um trabalho, os podcasts agora dançam na corrente digital, proporcionando uma experiência incrível, para ser ouvida a qualquer momento e em qualquer lugar</p>
+                <p class="textoG">O rádio, usado pelos nossos pais e avós, com seus programas ao vivo, suas músicas selecionadas a dedo com vozes que ecoam como companheiras diárias, todas as manhãs, tardes e noites, inspiraram o espírito do podcast. E como uma fênix renascida, o podcast traz a mesma paixão pela narração, as mesmas vozes humanas que encantam e educam, mas de uma maneira que se adapta ao ritmo agitado do século XXI, o nosso século.</p>
+                <p class="textoG">Ah, mas não pensem que o rádio está ultrapassado, pois sua magia persiste. Ainda é um farol de conexão instantânea, um amigo íntimo que nos envolve com notícias, músicas e histórias. E agora, em perfeita harmonia, o podcast se une ao rádio, expandindo o alcance, permitindo a exploração aprofundada de temas e dando voz a todos, desde os contadores de histórias profissionais até os entusiastas curiosos.</p>
+                <p class="textoG">Portanto, meus amigos, deixem que o rádio e o podcast se entrelacem como duas estações em um dial, trazendo consigo o passado e o futuro, a familiaridade e a novidade. E juntos, eles nos lembram da essência poderosa da voz humana, que persiste, cativa e nos conecta, não importa a plataforma em que ressoa.</p>
+                <p class="textom">Muzy, Rodrigues Claudia (2023)</p>
+            </div>
+        </section>
+        <section class="perguntas2">
+            <div class="perguntasDiv">
+                <h3 class="tituloMenor">Dialogando com o texto</h3>
+                <div class="textoDiv">
+                    <p class="perguntasT">1. Existe uma conexão entre o rádio e o podcast? Quais são as semelhanças e diferenças destacadas?</p>
+                    <p class="perguntasT">2. O texto descreve o rádio como um "farol de conexão instantânea"? Você consegue entender essa comparação?</p>
+                    <p class="perguntasT">3. O podcast traz a mesma paixão pela narração e pelas vozes humanas do rádio. Essa paixão é transmitida de maneira diferente no podcast em comparação com o rádio tradicional?</p>
+                    <p class="perguntasT">4. Quais são os benefícios que o podcast traz para a experiência auditiva dos ouvintes?</p>
+                    <p class="perguntasT">5. O texto fala sobre o podcast como uma evolução do rádio. você acha que o formato do podcast aproveita a tecnologia moderna para atender às demandas do público atual? </p>
+                    <p class="perguntasT">6. De que maneira o texto sugere que o rádio e o podcast podem coexistir e complementar um ao outro? Quais são os pontos fortes de cada um desses meios?</p>
+                </div>
+                <h3 class="tituloMenor">Ação importante</h3>
+                <div class="textoDiv">
+                    <p class="perguntasT">Leitura dramatizada do texto (explorar as características radiofônicas do texto como as interpelações e presença de vocativos). Fique atento à pontuação!</p>
+                    <p class="perguntasT"> Visita guiada ao espaço da rádio escolar para conhecer como funciona os equipamentos, fazer um registro pode ser interessante ou visitar uma estação de rádio da cidade.</p>
+                </div>
+                <h3 class="tituloMenor">Sugestões de registro</h3>
+                <div class="textoDiv">
+                    <p class="textoG">Nome da rádio:</p>
+                    <p class="textoG">Slogan:</p>
+                    <p class="textoG">Fundada em:</p>
+                    <p class="textoG">Como a rádio é usada no espaço escolar?</p>
+                    <p class="textoG">Existem melhorias que podem ser feitas ou existe a necessidade de aquisição de equipamentos eletrônicos? Explique o motivo.</p>
+                    <p class="textoG">Ela pode ser útil ao nosso podcast? </p>
+                </div>
+                <h3 class="tituloMenor">Garimpar conhecimentos</h3>
+                <div class="textoDiv">
+                    <p class="textoG">Pesquisa: Navegar em sites e blogs coletando informações sobre tipos e formatos de podcasts.</p>
+                    <p class="textoG">Use os desenhos para nortear e ilustrar a sua pesquisa.</p>
+                    <p class="textoG">Selecione no mínimo quatro tipos de podcast, escreva o formato e as suas características.</p>
+                    
+                </div>
+                <h3 class="tituloMenor">Avaliação</h3>
+                <div class="textoDiv">
+                    <p class="textoG">Durante todo o processo de construção com a participação e interação dos alunos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="baixo">
+        <div class="backfo">
+            <div>
+                <p class="letra">Conheça meu trabalho </p>
+                <section class="imagens">
+                    <a href="https://www.instagram.com/criatividadedialogica2/"><img class="img_footer" src="instagram.png" alt="inst"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556772900520&mibextid=ZbWKwL"><img class="img_footer" src="facebook.png" alt="facebook"></a>
+                    <a href="https://open.spotify.com/show/3XS2YpdyxJepp1uchK2nWR?si=AaGDQTd-TJqRi4_aApYYJw&nd=1&dlsi=cd945a7f5d904057"><img class="img_footer" src="spotify.png" alt="spotify"></a>
+                </section>
+            </div>
+            <div class="credi">
+                <p class="letra">Créditos</p>
+                <p class="creditos">Desenvolvedor: Samuel Muzy Fernandes</p>
+                <a class="creditos" href="https://storyset.com/social-media">Social media illustrations by Storyset</a>
+                <p class="creditos">Imagem de <a class="creditos" href="https://pixabay.com/pt/users/gdj-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Gordon Johnson</a> por <a class="creditos" href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Pixabay</a></p>
+                <a class="creditos" href="https://www.flaticon.com/br/icones-gratis/instagram" title="instagram ícones">Instagram ícones criados por Freepik - Flaticon</a>
+            </div>
+            <div class="ifs">
+                <img class="img2" src="ifs.png" alt="logo">
+                <img class="img2" src="logo.png" alt="logo">
+            </div>
+            
+        </div>
+    </footer>
+    <script src="modulo1.js"></script>
+</body>

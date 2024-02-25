@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fce6ef;
+}
+.imgcabe{
+    width: 120px;
+    height: 113px;
+}
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    position: sticky;
+    top: 0; /* Define a posição do topo como 0 para fixar no topo da tela */
+    z-index: 1000; /* O z-index ajuda a garantir que a barra fixa esteja acima de outros elementos */
+    border-bottom: solid 1px gray;
+}
+
+.iten_cabe{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 10%;
+    align-items: center;
+}
+.itens{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.itens:hover{
+    color: #dd6798; 
+}
+.drop{
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 999;
+    width: 7%;
+    border: solid 1px black;
+    flex-direction: column;
+}
+
+.hoverItens:hover{
+    background-color: #f379ac;
+}
+.setaReta{
+    display: flex;
+    flex-direction: row;
+    
+}
+.seta{
+    width: 20px;
+}
+.drop li{
+    padding: 15%;
+    background-color: #f6d3e2;
+    z-index: 999;
+    display: block;
+    text-align: center;
+}
+.drop:hover{
+    display: block;
+}
+/*menu mobile*/
+.menu-mobile{
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+    overflow: hidden;
+    transition: 5.s;
+}
+.abrir-menu{
+    width: 0%;    
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 5.s;
+}
+.menu-mobile div a{
+    text-align: right;
+}
+.btn-abrir-botao img{
+    width: 0px;
+    
+}
+.menu-mobile .btn-fechar img{
+    width: 10%;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+.menu-mobile div a p{
+    color: black;
+    background-color: #f6d3e2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+.menu-mobile div a p:hover{
+    background-color: #dd6798;
+    color: black;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+/*menu mobile*/
+.menu-mobile{
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+    overflow: hidden;
+    transition: 5.s;
+}
+.abrir-menu{
+    width: 0%;    
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 5.s;
+}
+.menu-mobile div a{
+    text-align: right;
+}
+.btn-abrir-botao img{
+    width: 0px;
+    
+}
+.menu-mobile .btn-fechar img{
+    width: 10%;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+.menu-mobile div a p{
+    color: black;
+    background-color: #f6d3e2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+.menu-mobile div a p:hover{
+    background-color: #dd6798;
+    color: black;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+.invi{
+    padding-right: 15px;
+}
+/*main*/
+.imgFundo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white; 
+    align-items: center;
+    padding: 5%;                               /*primeira div foto*/
+}
+.links{
+    text-decoration: none;
+}
+.imgF{
+    width: 30%;
+}
+.titulo-modulo3{
+    color: #d6618f;
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+}
+.textoModulo{
+    color: black;
+    font-size: 20px;
+    padding-top: 3%;
+    font-family: 'Alegreya', serif;
+}
+.divMod{
+    width: 35%;
+}
+.dicasP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;                                      /*section dicas pra professores*/
+}
+.tituloDicas{
+    font-size: 40px;
+    padding-bottom: 2%;
+    font-family: 'Arvo', serif;
+}
+.dicasT{
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+}
+.imgTuturial{
+    width: 50%;
+}
+.Tuturial{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.tuu{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    justify-content: space-evenly;
+}
+.tituloPtu{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 3%;
+    font-family: 'Arvo', serif;
+}
+.botoens{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 2%;
+}
+.text-decoration{
+    font-size: 25px;
+    width: 90%;
+    font-family: 'Alegreya', serif;
+}
+.proxima-pagina{
+    width: 6%;
+    height: 5vh;
+    background-color: white;
+    color: #dd6798;
+    border: solid 1px #f379ac;
+    box-shadow: 1px 1px 2px black;
+    border-radius: 5px;
+    font-family: 'Arvo', serif;
+}
+.proxima-pagina:hover{
+    background-color: #f6d3e2;
+    color: black;
+    border: solid 1px black;
+}
+proxima-pagina::after{
+    background-color: #dd6798;
+    color: black;
+    border: solid 1px black;
+}
+.sugestao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tituloS{
+    font-size: 30px;
+    font-family: 'Arvo', serif;
+}
+.textoS{
+    font-size: 20px;
+    padding-top: 5%;
+    font-family: 'Alegreya', serif;
+}
+.textoGrande{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Alegreya', serif;
+}
+.div-textoGrande{
+    width: 60%;
+    padding: 5%;
+    
+}
+.textog{
+    padding:1% 0% 1% 0%;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+}
+.tituloB{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-family: 'Arvo', serif;
+}
+.segundoTitulo{
+    font-size: 30px;
+    color: #f8418d;
+    padding-bottom: 5px;
+    font-family: 'Arvo', serif;
+}
+.subTi{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+}
+.fundoC{
+    width: 40%;
+}
+.fundo2{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+.tituloCafe{
+    font-size: 35px;
+    color: #f8418d;
+    font-family: 'Arvo', serif;
+}
+.subtCafe{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+}
+/*footer*/
+.baixo{
+    background-color: white;
+    height: 100%;
+    padding-left: 1%;
+    padding-top: 1%;
+    gap: 2px;
+    padding-bottom: 2%;
+    border-top: solid black 1px;
+}
+.letra{
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+.img_footer{
+    padding-top: 1%;
+    width: 50px;
+    background-color: white;
+}
+.imagens{
+    display: flex;
+    margin-top: 1%;
+    gap: 10px;
+    background-color: white;
+}
+.iten3{
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.backfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creditos{
+    text-decoration: none;
+}
+.img2{
+    width: 100px;
+}
+.ifs{
+    display: flex;
+    padding-right: 3%;
+    justify-content: center;
+}
+@media screen and (max-width: 1195px){
+    .imgcabe{
+        width: 19%;
+        height: 10%;
+    }                   /*cabecario*/
+ 
+    .invi{
+        width: 40px; /*cabecario*/
+    }
+    .btn-abrir-botao img{
+        width: 40px;            /*cabecario*/
+    }
+    .iten_cabe{
+        display: none;
+    }
+    .img2{
+        width: 12%;
+    }
+    .baixo{
+        height: 30vh;
+    }
+    /*main*/
+    .imgFundo{
+        flex-direction: column-reverse;
+    }
+    .imgF{
+        width: 80%;
+    }
+    .divMod{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+    .titulo-modulo3{
+        text-align: center;
+    }
+    .textoModulo{
+        padding-top: 4%; 
+    }
+    .tituloDicas{
+        font-size: 30px;
+        padding-bottom: 5%;
+    }
+    .imgTuturial{
+        width: 100%;
+    }
+    .tuu{
+        flex-direction: column-reverse;
+    }
+    .tituloPtu{
+        font-size: 25px;
+        padding-bottom: 5%;
+    }
+    .text-decoration{
+        font-size: 20px;
+        width: 95%;
+        padding-top: 7%;
+    }
+    .proxima-pagina{
+        width: 30%;
+        height: 7vh;
+        margin-bottom: 5%;
+    }
+    .sugestao{
+        flex-direction: column-reverse;
+    }
+    .tituloS{
+        text-align: center;
+    }
+    .textoS{
+        text-align: center;
+        padding-bottom: 7%;
+    }
+    .div-textoGrande{
+        width: 90%;
+    }
+    .segundoTitulo{
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .subTi{
+        text-align: center;
+    }
+    .fundo2{
+        flex-direction: column-reverse;
+    }
+    .tituloCafe{
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .subtCafe{
+        text-align: center;
+    }
+    .fundoC{
+        width: 90%;
+        padding-bottom: 10%;
+    }
+    /*footer*/
+    .backfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 20px;
+    }
+    .baixo{
+        text-align: center;
+        height: 100%;
+    }
+    .imagens{
+        justify-content: center;
+    }
+    .img2{
+        width: 16%;
+    }
+}

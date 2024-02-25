@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fce6ef;
+}
+.imgcabe{
+    width: 120px;
+    height: 113px;
+}
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    position: sticky;
+    top: 0; /* Define a posição do topo como 0 para fixar no topo da tela */
+    z-index: 1000; /* O z-index ajuda a garantir que a barra fixa esteja acima de outros elementos */
+    border-bottom: solid 1px gray;
+}
+
+.iten_cabe{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 10%;
+    align-items: center;
+}
+.itens{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.itens:hover{
+    color: #dd6798; 
+}
+.drop{
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 999;
+    width: 7%;
+    border: solid 1px black;
+}
+
+.hoverItens:hover{
+    background-color: #f379ac;
+}
+.setaReta{
+    display: flex;
+    flex-direction: row;
+    
+}
+.seta{
+    width: 20px;
+}
+.drop li{
+    padding: 15%;
+    background-color: #f6d3e2;
+    z-index: 999;
+    display: block;
+    text-align: center;
+    
+}
+.drop:hover{
+    display: block;
+}
+/*menu mobile*/
+.menu-mobile{
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+    overflow: hidden;
+    transition: 5.s;
+}
+.invi{
+    padding-right: 15px;
+}
+.abrir-menu{
+    width: 0%;    
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 5.s;
+}
+.menu-mobile div a{
+    text-align: right;
+}
+.btn-abrir-botao img{
+    width: 0px;
+    
+}
+.menu-mobile .btn-fechar img{
+    width: 10%;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+.menu-mobile div a p{
+    color: black;
+    background-color: #f6d3e2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+.menu-mobile div a p:hover{
+    background-color: #dd6798;
+    color: black;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+/*main*/
+.imgP{
+    width: 20%;
+    height:45vh;
+    border-radius: 7%;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%;
+    gap: 5%;
+    padding: 2%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px rgb(123, 123, 123);
+}
+main p{
+    font-family: 'Alegreya', serif;
+}
+h3{
+    font-family: 'Arvo', serif;
+}
+.texto2{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.sobre{
+    font-size: 30px;
+}
+.icone{
+    height: 2%;
+}
+.texto3{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    gap: 8%;
+    text-align: start;
+}
+/*footer*/
+.baixo{
+    background-color: white;
+    height: 100%;
+    padding-left: 1%;
+    padding-top: 1%;
+    gap: 2px;
+    padding-bottom: 2%;
+}
+.letra{
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+.img_footer{
+    padding-top: 1%;
+    width: 50px;
+    background-color: white;
+    
+}
+.imagens{
+    display: flex;
+    margin-top: 1%;
+    gap: 10px;
+    background-color: white;
+}
+.iten3{
+    margin-top: 5%;
+    font-size: 25px;
+}
+.backfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creditos{
+    text-decoration: none;
+}
+.img2{
+    width: 100px;
+}
+.ifs{
+    display: flex;
+    padding-right: 3%;
+    justify-content: center;
+}
+@media screen and (max-width: 1195px){
+    .imgcabe{
+        width: 19%;
+        height: 10%;
+    } 
+ 
+    .invi{
+        width: 40px; /*cabecario*/
+    }
+    .btn-abrir-botao img{
+        width: 40px;            /*cabecario*/
+    }
+    .iten_cabe{
+        display: none;
+    }
+    .img2{
+        width: 12%;
+    }
+    /*main*/
+   .principal{
+        flex-direction: column;
+        gap: 20px;   
+    }
+    .imgP{
+        width: 100%;
+    }
+    .texto3{
+        width: 100%;
+        text-align: start;
+        font-size: 20px;
+    }
+    .texto2{
+        width: 100%;
+        text-align: start;
+        font-size: 20px;
+    }
+    .sobre{
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    .textoPrincipal{
+        
+        padding: 15px;
+    }
+    .detalhe{
+        padding: 15px;
+    }
+    .detalhe h3{
+        margin-top: 0px;
+    }
+    /*footer*/
+    .baixo{
+        height: 100%;
+    }
+    .backfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 20px;
+    }
+    .baixo{
+        text-align: center;
+    }
+    .imagens{
+        justify-content: center;
+    }
+    .img2{
+        width: 16%;
+    }
+}

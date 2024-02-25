@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criatividade dialógica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="LOGO CLAUDIA.png" type="image/x-icon">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeca">
+        <div>
+            <a href="index.html"><img class="imgcabe" src="LOGO CLAUDIA.png" alt="img-cabe"></a>
+        </div>
+        <div class="iten_cabe">
+            <a class="itens" href="index.html"><p class="itens">Principal </p></a>
+            <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+            <div>
+                <div onclick="drop()" class="setaReta">
+                    <p id="itenDrop" class="itens">Oficinas</p>
+                    <img id="imagemSeta" style="width: 20px;" src="seta-para-baixo (1).png" alt="">
+                </div>
+                <ul id="dropdown" class="drop">
+                    <a style="text-decoration:none ; color: black" href="modulo1.html"><li class="hoverItens">Módulo 1</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo2.html"><li class="hoverItens">Módulo 2</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo3.html"><li class="hoverItens">Módulo 3</li></a>
+                </ul>
+            </div>
+            <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+            <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+        </div>
+        <div class="btn-abrir-botao" onclick="abrir()" id="abrir-menu">
+            <img class="invi" src="list.svg" alt="">
+        </div>
+        <div  class="abrir-menu" id="menu-mobile">
+            <div onclick="fechar()" class="btn-fechar">
+                <img src="x-lg.svg" alt="">
+            </div>
+            <div>
+                <a class="itens" href="index.html"><p class="itens">Principal</p></a>
+                <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+                <a class="itens" href="modulo1.html"><p class="itens">Módulo 1</p></a>
+                <a class="itens" href="modulo2.html"><p class="itens">Módulo 2</p></a>
+                <a class="itens" href="modulo3.html"><p class="itens">Módulo 3</p></a>
+                <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+                <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+            </div>
+        </div>
+        <div id="overlay" class="overlay-menu">
+        </div>
+    </header>
+    <main class="">
+        <div class="principal">
+            <div class="espaco">
+                <h1 class="iten1">Criatividade dialógica</h1>
+                <h2 class="iten2">O <i>podcast</i> nas aulas de Língua Portuguesa</h2>
+                <p class="iten3">Professores, este é um espaço para explorar práticas dialógicas com uma pitada generosa de criatividade! Aqui, você encontra oficinas e roteiros prontinhos para serem aplicados em suas aulas. Vamos juntos transformar o aprendizado em uma experiência única e envolvente!</p>
+            </div>
+            <img class="imgPrincipal" src="cinzas.png" alt="imgPrincipal">
+        </div>
+        <div class="carrosel">
+            <div class="conteiner" id="img">
+                <img src="carossel(1).jpg" alt="">
+                <img src="carossel(2).jpg" alt="">
+                <img src="carossel(3).jpg" alt="">
+                <img src="carossel(4).jpg" alt="">
+            </div>
+        </div>
+        <div class="modulos">
+            <a href="modulo1.html"><input class="btn" type="button" value="Módulo 1"></a>
+            <a href="modulo2.html"><input class="btn" type="button" value="Módulo 2"></a>
+            <a href="modulo3.html"><input class="btn" type="button" value="Módulo 3"></a>
+        </div>
+        <section class="comeco">
+            <div>
+                <h1 class="titulo">Ponto de partida</h2>
+                <h2 class="titulo">Oficina: Sou podcasters</h3>
+            </div>
+            <img class="imagem1" src="Firefly microfone de podcast que combine com rosa 71965.jpg" alt="imagem-principal-meio">
+        </section>
+        <section class="textosP">
+            <img class="imagem2" src="ai-generated-8426822_640.png.webp" alt="imagembaixo">
+            <p class="textoMenor">A popularidade dos podcasts tem crescido significativamente nos últimos anos, e muitas pessoas se tornaram podcasters como uma maneira de se conectar com seu público, compartilhar conhecimento e construir uma comunidade em torno de um tema específico, pensando nisso e no conhecimento que os alunos já possuem sobre o podcast é hora de colocá-los como protagonistas.
+            </p>
+        </section>
+        <section class="questo">
+            <div class="obj">
+                <h1 class="tituloQ">Objetivos e metodologias</h1>
+                <p class="textoQ">Objetivos: Momento de deixar as estrelas do projeto colocarem em prática conhecimentos pré-existentes e adquiridos com pesquisas, registrar dificuldades e dúvidas. Diante da devolutiva propor intervenções.
+                </p>
+                <p class="textoQ"> Habilidades na  BNCC :<a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef69lp26">EF69LP26, </a><a  class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef89lp22"> EF89LP22, </a><a  class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef69lp38"> EF69LP38</a></p>
+                <p class="textoQ">Tempo:  03 aulas de 50 minutos</p>
+
+                <h1 class="tituloQ">Dicas para o professor</h1>
+                <p class="textoQ">Para preparar a atividade e executá-la, a turma será dividida em grupos.
+                    Cada grupo produzirá um podcast, e eles serão divulgados no canal a ser criado pela turma.
+                    Deixe por conta dos alunos a escolha dos temas, formato e estilo.</p>
+            </div>
+        </section>
+        <section class="questao1">
+            <h2 class="tituloQuestao1">Atividades</h2>
+            <div class="atividade">
+                <h2 class="tituloQuestao">Atividade 01</h2>
+                <p>I-Em grupo, discuta com colegas e pense em TEMAS interessantes para gravar um podcast.</p>
+                <p>II-Escolha um dos temas e lembre-se:  O podcast será a sua voz para discutir problemas que fazem parte do universo adolescente.</p>
+                <p>III-Escolha um estilo: Humor, informação, entrevista, debate, mesa-redonda, literário</p>
+                <p>IV-Será formal ou informal?</p>
+                <P>V-Registro da equipe</p>
+                <h2 class="tituloQuestao2">Tipo de podcast que será desenvolvido pela equipe:</h2>
+                <p>Formato:</p> 
+                <p>Estilo: </p>  
+                <p>Tema:</p>   
+                <p>Nome criativo para o podcast:</P>
+                <h2 class="tituloQuestao2">Avaliação</h2>
+                <p>Poderá ser feita a partir dos registros, interação da turma e com o produto inicial que será um podcast produzido pelos alunos com temas, formato e estilo a escolha dos alunos..</p>
+            </div>
+        </section>
+    </main>
+    <footer class="baixo">
+        <div class="backfo">
+            <div>
+                <p class="letra">Conheça meu trabalho </p>
+                <section class="imagens">
+                    <a href="https://www.instagram.com/criatividadedialogica2/"><img class="img_footer" src="instagram.png" alt="inst"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556772900520&mibextid=ZbWKwL"><img class="img_footer" src="facebook.png" alt="facebook"></a>
+                    <a href="https://open.spotify.com/show/3XS2YpdyxJepp1uchK2nWR?si=AaGDQTd-TJqRi4_aApYYJw&nd=1&dlsi=cd945a7f5d904057"><img class="img_footer" src="spotify.png" alt="spotify"></a>
+                </section>
+            </div>
+            <div class="credi">
+                <p class="letra">Créditos</p>
+                <p class="creditos">Desenvolvedor: Samuel Muzy Fernandes</p>
+                <a class="creditos" href="https://storyset.com/social-media">Social media illustrations by Storyset</a>
+                <p class="creditos">Imagem de <a class="creditos" href="https://pixabay.com/pt/users/gdj-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Gordon Johnson</a> por <a class="creditos" href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Pixabay</a></p>
+                <a class="creditos" href="https://www.flaticon.com/br/icones-gratis/instagram" title="instagram ícones">Instagram ícones criados por Freepik - Flaticon</a>
+            </div>
+            <div class="ifs">
+                <img class="img2" src="ifs.png" alt="logo">
+                <img class="img2" src="logo.png" alt="logo">
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,805 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fce6ef;
+}
+.imgcabe{
+    width: 120px;
+    height: 113px;
+}
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    position: sticky;
+    top: 0; /* Define a posição do topo como 0 para fixar no topo da tela */
+    z-index: 1000; /* O z-index ajuda a garantir que a barra fixa esteja acima de outros elementos */
+    border-bottom: solid 1px gray;
+}
+
+.iten_cabe{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 10%;
+    align-items: center;
+}
+.itens{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.itens:hover{
+    color: #dd6798; 
+}
+.drop{
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 999;
+    width: 7%;
+    border: solid 1px black;
+    flex-direction: column;
+}
+
+.hoverItens:hover{
+    background-color: #f379ac;
+}
+.setaReta{
+    display: flex;
+    flex-direction: row;
+    
+}
+.seta{
+    width: 20px;
+}
+.drop li{
+    padding: 15%;
+    background-color: #f6d3e2;
+    z-index: 999;
+    display: block;
+    text-align: center;
+}
+.drop:hover{
+    display: block;
+}
+/*menu mobile*/
+.menu-mobile{
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+    overflow: hidden;
+    transition: 5.s;
+}
+.abrir-menu{
+    width: 0%;    
+    background-color: #f6d3e2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 5.s;
+}
+.menu-mobile div a{
+    text-align: right;
+}
+.btn-abrir-botao img{
+    width: 0px;
+    
+}
+.menu-mobile .btn-fechar img{
+    width: 10%;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+.menu-mobile div a p{
+    color: black;
+    background-color: #f6d3e2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+.menu-mobile div a p:hover{
+    background-color: #dd6798;
+    color: black;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+.invi{
+    padding-right: 15px;
+}
+
+/*main*/
+.oficina1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagemIlustra{
+    width: 40%;
+}
+.divOficina1{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.titulo1{
+    font-size: 50px;
+    color: #d6618f;
+    font-family: 'Arvo', serif;
+}
+.tituloMenor{
+    padding-bottom: 5%;
+    font-size: 25px;
+    font-family: 'Arvo', serif;
+}
+.textoP{
+    font-size: 20px;
+    padding-bottom: 0.5%;
+    font-family: 'Alegreya', serif;
+    padding-top: 1%; 
+}
+.link{
+    text-decoration: none;
+    font-family: 'Alegreya', serif;
+}
+.dicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+}
+.tituloDicas{
+    font-size: 40px;
+    margin-bottom: 2%;
+    font-family: 'Arvo', serif;
+}
+.dicasT{
+    font-size: 25px;
+    font-family: 'Alegreya', serif;
+}
+.atividade1{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    padding: 5%;
+    gap: 3%;
+}
+.atividadeDiv{
+    width: 60%;
+    height: 33pc;
+    font-size: 20px;
+    box-shadow: 1px 1px 4px black;
+    padding: 2%;
+    border-top: solid 3px #f6d3e2;
+}
+.ativi{
+    margin-top: 3%;
+    font-family: 'Alegreya', serif;
+}
+.ativiTi{
+    font-family: 'Arvo', serif;
+}
+.oficina2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4%;
+}
+.divoficina2{
+    width: 40%;
+}
+.texto-oficina2{
+    font-size: 20px;
+    padding-bottom: 1%;
+    font-family: 'Alegreya', serif;
+}
+.titu-oficina2{
+    font-size: 35px;
+    padding-bottom: 5%;
+    font-family: 'Arvo', serif;
+}
+.perguntas-G{
+    background-color: white;
+    text-align: center;
+    padding: 3% 0% 3% 0%;
+}
+.cardsGisele{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+    gap: 3%;
+}
+.cartoens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    box-shadow: 2px 2px 4px black;
+    align-items: center;
+    border-radius: 3%;
+    border: solid 1px #f379ac;
+    width: 20%;
+    gap: 0%;
+    padding: 1%;
+}
+.icones{
+    width: 45%;
+    margin-bottom: 15%;
+}
+.tituloGisele{
+    font-size: 30px;
+    color: #a94f73;
+    font-family: 'Arvo', serif;
+}
+.textoGisele{
+    font-family: 'Alegreya', serif;
+}
+.giseleImg{
+    width: 25%;
+}
+.atividadeDialo{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    
+}
+.fontFi{
+    margin-bottom: 3%;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+}
+.atividadeD{
+    font-size: 40px;
+    color: #d6618f;
+    font-family: 'Arvo', serif;
+}
+.textoAtividadeD{
+    font-size: 25px;
+    width: 60%;
+    text-align: start;
+    padding: 3%;
+    font-family: 'Alegreya', serif;
+}
+.perguntasAtividade{
+    font-size: 25px;
+    padding: 1%;
+    font-family: 'Alegreya', serif;
+}
+.divPer{
+    width: 50%;
+    padding: 4%;
+}
+.explorando{
+    background-color: white;
+}
+.tituloEx{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+.divExplorando{
+    width: 50%;
+    padding: 1%;
+}
+.textoEx{
+    font-size: 25px;
+    width: 90%;
+    text-align: start;
+    padding: 1% 1% 1% 1%;
+    font-family: 'Alegreya', serif;
+}
+.imgEx{
+    width: 46%;
+    height: 20%;
+}
+.atividadeEx{
+    font-size: 25px;
+    width: 49%;
+    font-family: 'Arvo', serif;
+}
+.cardsFinais{
+    background-color: #f7e4eb;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding: 5%;
+}
+.cardF{
+    width: 50%;
+    background-color: rgb(250, 250, 250);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 5px;
+    border: solid 1px black;
+    
+}
+.cardF:hover{
+    box-shadow: 2px 2px 4px #d6618f;
+    border: #d6618f solid 1px;
+}
+.textoCardF{
+    font-size: 20px;
+    padding: 1%;
+    font-family: 'Alegreya', serif;
+    
+}
+.titulocardF{
+    text-align: center;
+    padding-bottom: 15%;
+    color: #000000;
+    font-family: 'Arvo', serif;
+}
+.oficina3{
+    background-color: white;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.oficina3-div{
+    width: 40%;
+    padding: 3%;
+}
+.titulo-oficina3{
+    font-size: 35px;
+    color: #dd6798;
+    font-family: 'Arvo', serif;
+}
+.textoOficina3{
+    font-size: 20px;
+    padding: 1%;
+    font-family: 'Alegreya', serif;
+}
+.dicas-Profe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0% 5% 0%;
+    gap: 20px;
+    background-color: #fce6ef;
+}
+.dicasPro{
+    width: 40%;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+
+}
+.dicasTexto{
+    padding: 1%;
+    font-family: 'Alegreya', serif;
+}
+.tituloPro{
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+}
+.poema{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 25px;
+    align-items: center;
+    padding: 3%; 
+}
+.divPoema{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto-poema{
+    width: 60%;
+    font-family: 'Alegreya', serif;
+}
+.tituloPoema{
+    font-size: 35px;
+    padding: 5%;
+    font-family: 'Arvo', serif;
+}
+.bird{
+    width: 20%;
+    align-self: flex-start;
+}
+.bird2{
+    width: 15%;
+    align-self: flex-end;
+}
+.texto-autor{
+    align-self: flex-end;
+    padding-top: 5%;
+    padding-right: 5%;
+    font-family: 'Alegreya', serif;
+}
+.cardPerguntas{
+    width: 90%;
+    background-color: white;
+    padding: 3%;
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 20px;
+    display: flex;
+}
+
+.perguntasJ-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    gap: 40px;
+}
+.perguntasJ-div h1{
+    padding: 1% 0% 1% 5%;
+
+}
+.tituloJoao{
+    font-family: 'Arvo', serif;
+}
+.textoJoao{
+    padding-top: 1%;
+    width: 80%;
+    margin-left: 5%;
+    font-family: 'Alegreya', serif;
+}
+.imagemQ{
+    width: 30%;
+    margin-right: 5%;
+}
+.imagemQ1{
+    width: 30%;
+}
+.finalQuest{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.finalques{
+    width: 60%;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.textoFinalQ{
+    font-size: 20px;
+    padding-top: 2%;
+    font-family: 'Alegreya', serif;
+}
+.textoFinalN{
+    font-size: 20px;
+    padding-top: 2%;
+    font-family: 'Arvo', serif;
+}
+.links{
+    text-decoration: none;
+}
+.tituloFinalQ{
+    padding-top: 3%;
+    font-size: 30px;
+    color: #bd5a81;
+    font-family: 'Arvo', serif;
+}
+.tituloF{
+    font-size: 30px;
+    padding-top: 3%;
+    color: #bd5a81;
+    padding-bottom: 1%;
+    font-family: 'Arvo', serif;
+}
+.textoFinal2{
+    font-size: 20px;
+    padding-top: 2%;
+    font-family: 'Alegreya', serif;
+}
+/*footer*/
+.baixo{
+    background-color: white;
+    height: 100%;
+    padding-left: 1%;
+    padding-top: 1%;
+    gap: 2px;
+    padding-bottom: 2%;
+    border-top: solid black 1px;
+}
+.letra{
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+.img_footer{
+    padding-top: 1%;
+    width: 50px;
+    background-color: white;
+}
+.imagens{
+    display: flex;
+    margin-top: 1%;
+    gap: 10px;
+    background-color: white;
+}
+.iten3{
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.backfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creditos{
+    text-decoration: none;
+}
+.img2{
+    width: 100px;
+}
+.ifs{
+    display: flex;
+    padding-right: 3%;
+    justify-content: center;
+}
+@media screen and (max-width: 1195px){
+    body {
+        overflow-x: hidden;
+    }    
+    .imgcabe{
+        width: 19%;
+        height: 10%;
+    } 
+    .invi{
+        width: 40px; /*cabecario*/
+    }
+    .btn-abrir-botao img{
+        width: 40px;            /*cabecario*/
+    }
+    .iten_cabe{
+        display: none;
+    }
+    .img2{
+        width: 12%;
+    }
+    .divImagem{
+        height: 60vh;
+    }
+    /*main*/
+    .oficina1{
+        flex-direction: column-reverse;
+    }
+    .imagemIlustra{
+        width: 90%;
+    }
+    .divOficina1{
+        width: 90%;
+        padding-bottom: 5%;
+    }
+    .titulo1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .tituloMenor{
+        text-align: center;
+    }
+    .textoP{
+        padding: 2%;
+        font-size: 20px;
+    }
+    .tituloDicas{
+        font-size: 30px;
+    }
+    .dicasT{
+        font-size: 20px;
+        width: 90%;
+    }
+    .link{
+        font-size: 15px;
+    }
+    .atividade1{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .atividadeDiv{
+        width: 95%;
+        height: 100%;
+    }
+    .oficina2{
+        flex-direction: column-reverse;
+    }
+    .divoficina2{
+        width: 95%;
+    }
+    .texto-oficina2{
+        padding: 2%;
+    }
+    .titu-oficina2{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 7%;
+    }
+    .cardsGisele{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .cartoens{
+        width: 85%;
+        font-size: 20px;
+    }
+    .tituloGisele{
+        padding-top: 10%;
+        padding-bottom: 13%;
+        width: 90%;
+    }
+    .atividadeD{
+        font-size: 30px;
+        text-align: center;
+        padding: 4% 5% 4% 5%;
+        
+    }
+    .textoAtividadeD{
+        width: 90%;
+    }
+    .giseleImg{
+        width: 70%;
+    }
+    .atividadeMenor{
+        width: 60%;
+        font-size: 10px;
+    }
+    .linkGisele{
+        width: 60%;
+        font-size: 10px;
+        margin-left: 20%;
+    }
+    .divPer{
+        width: 95%;
+        margin-top: 5%;
+    }
+    .perguntasAtividade{
+        padding: 2%;
+        width: 95%;
+    }
+    .divExplorando{
+        width: 95%;
+        margin-top: 5%;
+    }
+    .textoEx{
+        padding: 2%;
+    }
+    .atividadeEx{
+        font-size: 25px;
+        text-align: start;
+        width: 90%;
+    }
+    .imgEx{
+        width: 98%;
+    }
+    .cardsFinais{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .cardF{
+        width: 90%;
+    }
+    .oficina3{
+        flex-direction: column-reverse;
+    }
+    .oficina3-div{
+        width: 90%;
+    }
+    .titulo-oficina3{
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .textoOficina3{
+        padding: 2%;
+    }
+    .dicasPro{
+        width: 90%;
+    }
+    .divPoema{
+        width: 96%;
+    }
+    .tituloPoema{
+        font-size: 20px;
+    }
+    .texto-poema{
+        font-size: 20px;
+    }
+    .texto-autor{
+        font-size: 16px;
+    }
+    .tituloPro{
+        font-size: 30px;
+    }
+    .bird{
+        width: 40%;
+    }
+    .bird2{
+        width: 30%;
+    }
+    .cardPerguntas{
+        flex-direction: column-reverse;
+    }
+    .textoJoao{
+        width: 90%;
+        padding-bottom: 5%;
+    }
+    .imagemQ{
+        width: 90%;
+        padding-bottom: 10%;
+    }
+    .imagemQ1{
+        width: 90%;
+        padding-bottom: 10%;
+    }
+    .tituloJoao{
+        font-size: 25px;
+        text-align: center;
+        padding: 2%;
+        width: 95%
+    }
+    .finalques{
+        width: 90%;
+    }
+    .tituloFinalQ{
+        font-size: 25px;
+    }
+    .subti{
+        font-size: 23px;
+    }
+    /*footer*/
+    .baixo{
+        height: 100%;
+    }
+    .backfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        gap: 20px;
+    }
+    .baixo{
+        text-align: center;
+    }
+    .imagens{
+        justify-content: center;
+    }
+    .img2{
+        width: 16%;
+    }
+}

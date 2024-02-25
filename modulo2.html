@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2</title>
+    <link rel="stylesheet" href="modulo2.css">
+    <link rel="shortcut icon" href="LOGO CLAUDIA.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeca">
+        <div>
+            <a href="index.html"><img class="imgcabe" src="LOGO CLAUDIA.png" alt="img-cabe"></a>
+        </div>
+        <div class="iten_cabe">
+            <a class="itens" href="index.html"><p class="itens">Principal </p></a>
+            <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+            <div>
+                <div id="setabaixo" class="setaReta">
+                    <p id="itenDrop" class="itens">Oficinas</p></a>
+                    <img id="imagemSeta" style="width: 20px;" src="seta-para-baixo (1).png" alt="">
+                </div>
+                <ul id="dropdown" class="drop">
+                    <a style="text-decoration:none ; color: black" href="modulo1.html"><li class="hoverItens">Módulo 1</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo2.html"><li class="hoverItens">Módulo 2</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo3.html"><li class="hoverItens">Módulo 3</li></a>
+                </ul>
+            </div>
+            <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+            <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+        </div>
+        <div class="btn-abrir-botao" onclick="abrir()" id="abrir-menu">
+            <img class="invi" src="list.svg" alt="">
+        </div>
+        <div  class="abrir-menu" id="menu-mobile">
+            <div onclick="fechar()" class="btn-fechar">
+                <img src="x-lg.svg" alt="">
+            </div>
+            <div>
+                <a class="itens" href="index.html"><p class="itens">Principal</p></a>
+                <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+                <a class="itens" href="modulo1.html"><p class="itens">Módulo 1</p></a>
+                <a class="itens" href="modulo2.html"><p class="itens">Módulo 2</p></a>
+                <a class="itens" href="modulo3.html"><p class="itens">Módulo 3</p></a>
+                <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+                <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+            </div>
+        </div>
+        <div id="overlay" class="overlay-menu">
+        </div>
+    </header>
+    <main class="texte">
+        <section class="oficina1">
+            <div class="divOficina1">
+                <p class="titulo1">Módulo 2</h1>
+                <p class="tituloMenor">Oficina 1 : A hora da estrela</h2>
+                <p class="textoP">Tempo: 02 aulas de 50 minutos</p>
+                <p class="textoP">Objetivos:  proporcionar uma abordagem interativa para entrevista de Clarice Lispector, incentivar os alunos a compreenderem não apenas o contexto, mas a organização do gênero.</p>
+                <p class="textoP">Habilidades na BNCC: <a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef06lp01#:~:text=A%20habilidade%20EF06LP01%20consiste%20em,poder%20desenvolver%20uma%20atitude%20cr%C3%ADtica"> EF06LP01</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef67lp08"> EF67LP08</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef67lp16"> EF69LP16</a></p>
+            </div>
+            <img class="imagemIlustra" src="Low code development-bro.png" alt="imgoficina1">
+        </section>
+        <section class="dicas">
+            <p class="tituloDicas">Dicas para o professor</p>
+            <p class="dicasT">Acesse o site e leia a entrevista na íntegra no endereço:<br><a class="link" href="https://www.elfikurten.com.br/2012/04/clarice-lispector-ultima-entrevista.html">https://www.elfikurten.com.br/2012/04/clarice-lispector-ultima-entrevista.html</a> </p>
+        </section>
+        <section class="atividade1">
+            <div class="atividadeDiv">
+                <h1 class="ativiTi">Atividade 1</h1>
+                <p class="ativi">Segue abaixo um trecho da entrevista (escrita) entre o jornalista Júlio Lerner e a escritora brasileira Clarice Lispector, veiculada no programa “Panorama”, da Tv Cultura em 01 de fevereiro de 1977, ano da morte da escritora. </p>
+                <p class="ativi">Leia atentamente um pequeno trecho da entrevista em que Clarice Lispector relata a inspiração de sua escrita.</p>
+                <p class="ativi">Onde você foi buscar a inspiração, dentro de si mesma?</p>
+                <p class="ativi">Eu morei no Recife, me criei no Nordeste. E depois, no Rio de Janeiro tem uma feira de nordestinos no Campo de São Cristóvão e uma vez eu fui lá. E peguei o ar meio perdido do nordestino no Rio de Janeiro. Daí começou a nascer a ideia. Depois eu fui a uma cartomante e ela disse várias coisas boas que iam acontecer e imaginei, quando tomei o táxi de volta, que seria muito engraçado se um táxi me atropelasse e eu morresse depois de ter ouvido todas aquelas coisas boas. Então a partir daí foi nascendo também a trama da história.</p>
+                
+            </div>
+            <div class="atividadeDiv">
+                <h1 class="ativiTi">Explorando o gênero entrevista</h1>
+                <p class="ativi">1.	Identifique o tema da entrevista.</p>
+                <p class="ativi">2.	Quem é o entrevistador e o entrevistado?</p>
+                <p class="ativi">3.	Em relação a estrutura do gênero como organiza-se o texto? Em que veículo de comunicação o texto foi publicado?</p>
+                <p class="ativi">4.	Divida a turma em grupos e peça que discutam o contexto no qual Clarice Lispector encontrou inspiração para sua história (oralidade).</p>
+                <p class="ativi">5.	Peça aos alunos para analisarem a motivação por trás da busca de inspiração de Clarice Lispector. Eles podem discutir como as experiências pessoais e os momentos significativos podem impulsionar a criatividade e a construção de histórias(oralidade).</p>
+                <p class="ativi">6. Se você fosse fazer esse relato de apresentação  com base na resposta da autora como ficaria ?(Reescrita de texto mudando o discurso)</p>
+                <p class="ativi"><b>Avaliação:</b> Durante todo o processo de construção com a participação e interação dos alunos.</p>
+            </div>
+        </section>
+        <section class="oficina2">
+            <div class="divoficina2">
+                <h2 class="titu-oficina2">Oficina 02: A estrela do momento</h2>
+                <p class="texto-oficina2">Campo de atuação: Jornalístico/midiático</p>
+                <p class="texto-oficina2">Tempo:06 aulas de 50 minutos </p>
+                <p class="texto-oficina2">Objetivos: a partir da leitura de uma entrevista discutir os graus de parcialidade e imparcialidade nas marcas típicas do gênero, caracterização do campo jornalístico, organização e estrutura</p>
+                <p class="texto-oficina2">Habilidades na BNCC:<a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef06lp01#:~:text=A%20habilidade%20EF06LP01%20consiste%20em,poder%20desenvolver%20uma%20atitude%20cr%C3%ADtica"> EF06LP01</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef67lp08"> EF67LP08</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef67lp16"> EF69LP16</a></p>
+            </div>
+            <img class="imagemIlustra" src="Online learning-amico.png" alt="imgOficina2">
+        </section>
+        <section class="perguntas-G">
+            <h1 class="tituloGisele">Dicas para o professor</h1>
+            <div class="cardsGisele">
+                <div class="cartoens">
+                    <img class="icones" src="pc.png" alt="computadores">
+                    <p class="textoGisele">Sugestões: a aula deverá ser no laboratório de informática, permitir que os alunos usem computadores para ler o texto. Sem recursos tecnológicos, disponibilizar o texto digitalizado.</p>
+                </div>
+                <div class="cartoens">
+                    <img class="icones" src="impressora.png" alt="impressora">
+                    <p class="textoGisele">Disponibilizar a imagem impressa com a fotografia e o título da entrevista, explore os elementtos pré-textuais e a importância deles.</p>
+                </div>
+                <div class="cartoens">
+                    <img class="icones" src="organizando.png" alt="organizar">
+                    <p class="textoGisele">Organize um mural com todos os trabalhos, dê preferência a locais de convívio entre os alunos para divulgação das entrevistas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="atividadeDialo">
+            <h1 class="atividadeD">Atividade dialógica (Antes da leitura)</h1>
+            <p class="textoAtividadeD">A entrevista, enquanto gênero de comunicação, frequentemente ocorre entre duas pessoas e se desdobra em turnos, iniciando com uma breve introdução sobre o entrevistado e o tema em questão. </p>
+            <img src="2015-10-17-interview-gisele-b-ndchen-cover-girl-95-ans-vogue-paris-30-questions-7695.jpeg-north-499x-white-1.webp" alt="gisele" class="giseleImg">
+            <p class="atividadeMenor">Gisele Bündchen por Mario Testino para a Vogue Paris (Foto: Divulgação) — Foto: Vogue</p>
+            <a style="text-decoration: none;" href="https://vogue.globo.com/moda/noticia/2015/10/30-perguntas-para-gisele-bundchen-entrevista-da-top-para-vogue-paris.ghtml"><p class="linkGisele">https://vogue.globo.com/moda/noticia/2015/10/30-perguntas-para-gisele-bundchen-entrevista-da-top-para-vogue-paris.ghtml</p></a>
+            <div class="divPer">
+                <h1 class="atividadeEx">Passeio dialógico</h1>
+                <p class="perguntasAtividade">1. Reconhece a pessoa da fotografia?</p>
+                <p class="perguntasAtividade">2. O que você sabe sobre ela?</p>
+                <p class="perguntasAtividade">3. O que chama mais atenção na fotografia? </p>
+                <p class="perguntasAtividade">4. A modelo   é considerada uma das mulheres mais lindas do mundo. O que define os padrões de beleza no mundo hoje? Você concorda?</p>
+                <p class="perguntasAtividade">5. Se você fosse entrevistar a modelo que perguntas faria? Elabore pelo menos cinco.</p>
+                <p class="perguntasAtividade">6. Que tipo de tema você imagina encontrar nessa entrevista.</p>
+            </div>
+        </section>
+        <section class="atividadeDialo">
+            <h1 class="atividadeEx">Explorando o gênero entrevista</h1>
+                <div class="divExplorando">
+                    <p class="textoEx">1. Quem é o entrevistado?</p>
+                    <p class="textoEx">2. Quem é o entrevistador?</p>
+                    <p class="textoEx">3. Onde o texto está publicado?</p>
+                    <p class="textoEx">4. Qual é o tema da entrevista?</p>
+                    <p class="textoEx">5. A que tipo de público a entrevista se destina?</p>
+                    <p class="textoEx">6. Qual é o objetivo da entrevista?</p>
+                    <p class="textoEx">7. É possível identificar nos textos a opinião do entrevistado e aquela do entrevistador? Justifique com passagens do texto.</p>
+                    <p class="textoEx">8. Observe a imagem e localize todas as partes na entrevista em estudo retirando um exemplo de cada seção para isso reproduza o quadro no caderno:</p>
+                </div>
+                <img class="imgEx" src="imagemIntrevista-removebg-preview.png" alt="exemplo-entrevista">
+                <a class="fontFi" href="https://novaescola.org.br/"><p class="fontFi">Fonte : https://novaescola.org.br/</p></a>
+        </section>
+        <section class="cardsFinais">
+            <div class="cardF">
+                <h1 class="titulocardF">Produção de entrevista</h1>
+                <p class="textoCardF">Em grupos distribua as tarefas:</p>
+                <p class="textoCardF">Escolha um assunto para entrevista;</p>
+                <p class="textoCardF">Selecione o entrevistado e o entrevistador;</p>
+                <p class="textoCardF">Escolha um tema de acordo com o entrevistado;</p>
+                <p class="textoCardF">Elabore perguntas de acordo com o entrevistado.</p>
+            </div>
+            <div class="cardF">
+                <h1 class="titulocardF">Produção oral</h1>
+                <p class="textoCardF">Leia as perguntas com antecedência;</p>
+                <p class="textoCardF">Marque um local e horário , peça para entrevista ser gravada para facilitar a transcrição do conteúdo;</p>
+                <p class="textoCardF">Seja cordial e agradeça a disponibilidade e contribuição no trabalho;</p>
+                <p class="textoCardF">Transcreva as respostas e monte o seu texto seguindo a proposta do template;</p>
+                <p class="textoCardF">Escolha uma frase para ser destaque na entrevista;</p>
+                <p class="textoCardF">Escolha uma foto , e se possível mostre ao entrevistado com a intenção de deixá-lo confortável com a publicação.</p>
+            </div>
+            <div class="cardF">
+                <h1 class="titulocardF">Produção escrita</h1>
+                <p class="textoCardF">Dê um título ao texto;</p>
+                <p class="textoCardF">Façam em conjunto a introdução da entrevista;</p>
+                <p class="textoCardF">Elabore roteiros com as perguntas a serem desenvolvidas (05 perguntas);</p>
+                <p class="textoCardF"><b>Avaliação:</b>O processo avaliativo poderá ser contínuo com a interação dos alunos, atividades desenvolvidas : orais e escritas,  construção do produto.</p>
+            </div>
+        </section>
+        <section class="oficina3">
+            <div class="oficina3-div">
+                <h1 class="titulo-oficina3">Oficina 3- Gente famosa</h1>
+                <p class="textoOficina3">Campo de atuação: Jornalístico/midiático.</p>
+                <p class="textoOficina3">Tempo: 8 aulas de 50 minutos</p>
+                <p class="textoOficina3">Objetivos: Esses exercícios visam integrar elementos do poema em uma estrutura noticiosa, estimulando a criatividade, a escrita e a oralidade; redigir uma notícia e roteirizar em formato de podcast a partir do poema Notícia de Jornal de Manuel Bandeira</p>
+                <p class="textoOficina3">Habilidades na BNCC:<a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef67lp09"> EF67LP09</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef67lp10"> EF67LP10</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef69lp06"> EF69LP06</a> <a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef69lp08"> EF69LP08</a></p>
+            </div>
+            <img class="imagemIlustra" src="Blog post-bro.png" alt="ilu">
+        </section>
+        <section class="dicas-Profe">
+            <h1 class="tituloPro">Dicas para o professor</h1>
+            <div class="dicasPro">
+                <p class="dicasTexto">•	Faça duplas de alunos para que haja interação e diálogo;</p>
+                <p class="dicasTexto">•	Leve o texto digitalizado ou utilize o quadro;</p>
+                <p class="dicasTexto">•	Pesquise sobre Manuel Bandeira para que haja curiosidade em conhecer o autor;</p>
+                <p class="dicasTexto">•	Utilize, se possível, o laboratório de informática e peça os alunos para digitalizar os textos no word permitindo a escolha de letras e imagens;</p>
+                <p class="dicasTexto">•	Lembre-se de incentivar os alunos a basear suas respostas na interpretação do poema, incentivando a reflexão e a análise crítica. Além disso, permita espaço para diferentes perspectivas e interpretações</p>
+            </div>
+        </section>
+        <section class="poema">
+            <img class="bird" src="birds-1237265_1280.png" alt="passaro">
+            <div class="divPoema">
+                <h1 class="tituloPoema">Poema tirado de uma notícia de jornal</h1>
+                <p class="texto-poema">João Gostoso era carregador de feira livre e morava no morro da Babilônia num barracão [sem número]</p>
+                <p class="texto-poema">Uma noite ele chegou no bar Vinte de Novembro</p>
+                <p class="texto-poema">Bebeu</p>
+                <p class="texto-poema">Cantou</p>
+                <p class="texto-poema">Dançou</p>
+                <p class="texto-poema">Depois se atirou na lagoa Rodrigo de Freitas e morreu afogado.</p>
+                <p class="texto-autor">Manuel Bandeira. Libertinagem, 1930</p>
+            </div>
+            <img class="bird2" src="tree-2789704_1280.png" alt="passaro">
+        </section>
+        <section class="perguntaJoao">
+            <div class="perguntasJ-div">
+                <div class="cardPerguntas">
+                    <div>
+                        <h1 class="tituloJoao">Diálogo interpretativo</h1>
+                        <p class="textoJoao">1-	O que você acha que João Gostoso estava buscando ao ir ao bar Vinte de Novembro?</p>
+                        <p class="textoJoao">2-	Quais as características de João, lugar que ele morava, lugares que frequentava e o local onde foi encontrado? 
+                            Professor: Explore o valor semântico de gostoso, a intertextualidade do nome Babilônia, a inexistência de número, conotação do aumentativo barracão, nome do bar e o local onde foi localizado.
+                        </p>
+                        <h1 class="tituloJoao">Discussão de Motivações</h1>
+                        <p class="textoJoao">3-	Por que você acha que João Gostoso escolheu se atirar na lagoa Rodrigo de Freitas?</p>
+                        <p class="textoJoao">4-	Se esse indivíduo fosse morador da sua cidade, como ele seria descrito? Reescreva o poema acrescentando essas características. Depois justifique as suas escolhas por meio da crítica social tecida por você. </p>
+                    </div>
+                    <img class="imagemQ" src="ordem-de-servico.png" alt="">
+                </div>
+                <div class="cardPerguntas">
+                    <div>
+                        <h1 class="tituloJoao">Diálogo com personagens imaginários:</h1>
+                        <p class="textoJoao">5-Crie um diálogo entre João Gostoso e um personagem imaginário que tenta persuadi-lo a tomar uma decisão diferente. Explore as razões por trás dessa tentativa de persuasão.</p>
+                        <h1 class="tituloJoao">Diálogo Pós-Acontecimento:</h1>
+                        <p class="textoJoao">6-Imagine um diálogo entre duas pessoas discutindo a notícia da morte de João Gostoso. Como eles reagem? O que eles pensam sobre as ações de João?</p>
+                        <p class="textoJoao">7- Identifique o tempo verbal usado no poema. Reescreva o texto no presente. O que você percebeu?</p>
+                    </div>
+                    <img class="imagemQ1" src="lista-de-itens.png" alt="">  
+                </div>
+            </div>
+        </section>
+        <section class="finalQuest">
+            <div class="finalques">
+                <h1 class="tituloFinalQ">Produção escrita de notícia</h1>
+                <p class="textoFinalQ">1-Selecione um elemento específico do poema para ser o foco da notícia.</p>
+                <p class="textoFinalQ">2-Liste os elementos essenciais da notícia, respondendo às perguntas com base no poema escolhido:</p>
+                <h2 class="textoFinalN">quem, o quê, quando, onde, por quê ,e como?</h2>
+                <p class="textoFinalQ">• Crie um cabeçalho e um subtítulo envolventes que resumam o evento noticioso escolhido. Eles devem capturar a atenção do leitor e indicar a importância da notícia.</p>
+                <p class="textoFinalQ">4-Agregar informações é interessante</p>
+                <p class="textoFinalQ">Entrevista Fictícia:</p>
+                <p class="textoFinalQ">• Adicione uma entrevista fictícia com um morador local, um policial ou um especialista em segurança. Elabore perguntas e respostas que proporcionem mais detalhes e perspectivas sobre o incidente.</p>
+                <p class="textoFinalQ">Citações Impactantes:</p>
+                <p class="textoFinalQ">• Integre citações fictícias impactantes na notícia. Elas podem ser de testemunhas, autoridades locais ou até mesmo especulações sobre o estado emocional de João Gostoso antes do acontecimento.</p>   
+                <p class="textoFinalQ">5-Adicione elementos multimídia, como uma imagem ilustrativa da lagoa Rodrigo de Freitas ou uma foto fictícia de João Gostoso, para enriquecer a experiência do leitor.</p>
+                <h1 class="tituloFinalQ">Notícia pronta é hora de avaliar e revisar!</h1>
+                <p class="textoFinalQ">1-Avalie a ética da notícia garantindo que todas as informações sejam precisas e respeitosas. Considere o impacto emocional da notícia na comunidade.</p>
+                <p class="textoFinalQ">2- Faça uma revisão cuidadosa da notícia, ajustando a linguagem para garantir clareza e considerando a perspectiva do leitor.</p>
+                <p class="textoFinalQ">3-Observe o modo verbal que deve indicar a certeza dos fatos (modo indicativo) e prevalecer o presente como tempo verbal.</p>
+                
+                <h1 class="tituloF">No podcast a mágica acontece!</h1>
+                <h2 class="subti">Transforme essa notícia em um podcast jornalístico e para que isso </h2>
+                <h2 class="subti">aconteça é necessário frisar alguns passos importantes:</h2>
+                <p class="textoFinal2">1. Pense em uma vinheta que lembra os noticiários, programas jornalísticos;</p>
+                <p class="textoFinal2">2. Precisa existir música de fundo durante toda apresentação do programa;</p>
+                <p class="textoFinal2">3. Uma boa apresentação do podcast produz credibilidade, seja criativo;</p>
+                <p class="textoFinal2">4. Escolha um formato: áudio (gravação em voz e sons) ou audiovisual(vídeo);</p>
+                <p class="textoFinal2">5. Faça ajustes na notícia para ser lida ou gravada em formato de podcast;</p>
+                <p class="textoFinal2">6. Dê vida ao roteiro e respeite os sinais de pontuação, cuide da entonação;</p>
+                <p class="textoFinal2">7. Escolha um local bem silencioso, evite salas vazias para uma acústica perfeita;</p>
+                <p class="textoFinal2">8. Faça ensaios, leituras prévias e repita quantas vezes necessário;</p>
+                <p class="textoFinal2">9. Escolha um celular para armazenar as gravações.</p>
+                <h1 class="tituloFinalQ">Use toda sua criatividade e se possível faça uma edição depois da gravação.</h1>
+                <p class="textoFinalQ">Use Capcut - https://www.capcut.com/pt-br/   para cortar, designer e tantos outros recursos (gratuito);</p>
+                <p class="textoFinalQ"> Use as dicas de uso do Spotify para gravação de podcast diretamente no site Podcast for podcarters. https://podcasters.spotify.com/</p>
+                <p class="textoFinalQ"><b class="textoFinalN">Avaliação :</b> Participação ativa dos alunos;</p>
+                <p class="textoFinalQ">Produção oral e escrita.</p>
+                <p class="textoFinalQ">REFERÊNCIAS:</p>
+                <p class="textoFinalQ"> BANDEIRA, Manuel. Estrela da vida inteira: poesias reunidas e poemas traduzidos. Rio de Janeiro: José Olympio, 1991.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="baixo">
+        <div class="backfo">
+            <div>
+                <p class="letra">Conheça meu trabalho </p>
+                <section class="imagens">
+                    <a href="https://www.instagram.com/criatividadedialogica2/"><img class="img_footer" src="instagram.png" alt="inst"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556772900520&mibextid=ZbWKwL"><img class="img_footer" src="facebook.png" alt="facebook"></a>
+                    <a href="https://open.spotify.com/show/3XS2YpdyxJepp1uchK2nWR?si=AaGDQTd-TJqRi4_aApYYJw&nd=1&dlsi=cd945a7f5d904057"><img class="img_footer" src="spotify.png" alt="spotify"></a>
+                </section>
+            </div>
+            <div class="credi">
+                <p class="letra">Créditos</p>
+                <p class="creditos">Desenvolvedor: Samuel Muzy Fernandes</p>
+                <a class="creditos" href="https://storyset.com/social-media">Social media illustrations by Storyset</a>
+                <p class="creditos">Imagem de <a class="creditos" href="https://pixabay.com/pt/users/gdj-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Gordon Johnson</a> por <a class="creditos" href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Pixabay</a></p>
+                <a class="creditos" href="https://www.flaticon.com/br/icones-gratis/instagram" title="instagram ícones">Instagram ícones criados por Freepik - Flaticon</a>
+            </div>
+            <div class="ifs">
+                <img class="img2" src="ifs.png" alt="logo">
+                <img class="img2" src="logo.png" alt="logo">
+            </div>
+            
+        </div>
+    </footer>
+    <script src="modulo2.js"></script>
+</body>
+</html>

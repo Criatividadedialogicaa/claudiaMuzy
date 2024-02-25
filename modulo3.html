@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3</title>
+    <link rel="stylesheet" href="modulo3.css">
+    <link rel="shortcut icon" href="LOGO CLAUDIA.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeca">
+        <div>
+            <a href="index.html"><img class="imgcabe" src="LOGO CLAUDIA.png" alt="img-cabe"></a>
+        </div>
+        <div class="iten_cabe">
+            <a class="itens" href="index.html"><p class="itens">Principal </p></a>
+            <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+            <div>
+                <div id="setabaixo" class="setaReta">
+                    <p id="itenDrop" class="itens">Oficinas</p></a>
+                    <img id="imagemSeta" style="width: 20px;" src="seta-para-baixo (1).png" alt="">
+                </div>
+                <ul id="dropdown" class="drop">
+                    <a style="text-decoration:none ; color: black" href="modulo1.html"><li class="hoverItens">Módulo 1</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo2.html"><li class="hoverItens">Módulo 2</li></a>
+                    <a style="text-decoration:none ; color: black" href="modulo3.html"><li class="hoverItens">Módulo 3</li></a>
+                </ul>
+            </div>
+            <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+            <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+        </div>
+        <div class="btn-abrir-botao" onclick="abrir()" id="abrir-menu">
+            <img class="invi" src="list.svg" alt="">
+        </div>
+        <div  class="abrir-menu" id="menu-mobile">
+            <div onclick="fechar()" class="btn-fechar">
+                <img src="x-lg.svg" alt="">
+            </div>
+            <div>
+                <a class="itens" href="index.html"><p class="itens">Principal</p></a>
+                <a class="itens" href="estudoLingua.html"><p class="itens">Práticas dialógicas</p></a>
+                <a class="itens" href="modulo1.html"><p class="itens">Módulo 1</p></a>
+                <a class="itens" href="modulo2.html"><p class="itens">Módulo 2</p></a>
+                <a class="itens" href="modulo3.html"><p class="itens">Módulo 3</p></a>
+                <a class="itens" href="quemSomos.html"><p class="itens">Sobre os autores</p></a>
+                <a class="itens" href="termosDeUso.html"><p class="itens">Termos de uso</p></a>
+            </div>
+        </div>
+        <div id="overlay" class="overlay-menu">
+        </div>
+    </header>
+    <main>
+        <div class="imgFundo">
+            <div class="divMod">
+                <p class="titulo-modulo3">Módulo 3</p>
+                <p class="textoModulo">Tempo: 3 aulas de 50 minutos</p>
+                <p class="textoModulo">Objetivos: Ensinar a usar a plataforma de hospedagem para gravação e publicação de podcast </p>
+                <p class="textoModulo">Habilidades na BNCC:<a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef69lp08"> EF06LP01</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef69lp01"> EF67LP08</a><a class="links" href="https://novaescola.org.br/planos-de-aula/habilidades/ef69lp16#:~:text=A%20habilidade%20EF69LP16%20consiste%20em,tipos%2C%20v%C3%ADdeos%2C%20grava%C3%A7%C3%B5es%20de%20%C3%A1udio"> EF69LP16</a></p>
+                <p class="textoModulo">Finalidade da aula: Redigir um tutorial de como gravar um podcast.</p>
+            </div>
+            <img class="imgF" src="Mobile Marketing-pana.png" alt="">
+        </div>
+        <section class="dicasP">
+            <h1 class="tituloDicas">Dicas para o professor</h1>
+            <p class="dicasT">A aula deve ser planejada para o laboratório de informática.</p>
+            <p class="dicasT">Os computadores devem possuir aplicativos de captura de som e devem ter áudio (Realtek).</p>
+            <p class="dicasT">Lembrem-se que são aulas propositivas, podem ser adaptadas de acordo com a situação da escola.</p>
+            <p class="dicasT">Usem o celular para gravações de áudio e filmagens,mas antes converse com a equipe pedagógica</p>
+        </section>
+        <section class="Tuturial">
+            <h1 class="tituloPtu">Tutorial de como fazer um podcasts</h1>
+            <div class="tuu">
+
+                <div class="div-tutu">
+                <p id="texto" class="text-decoration">1º Passo: Abra seu navegador e acesse "Spotify for Podcarters".</p>
+                </div>
+            <img id="imagem" class="imgTuturial" src="t(1).png" alt="">
+            </div>
+            <div class="botoens">
+                <button id="anterior" class="proxima-pagina">Anterior</button>
+                <button id="proximo" class="proxima-pagina">Proximo</button>
+            </div>
+        </section>
+        <section class="sugestao">
+            <div class="sugestao-div">
+                <h1 class="tituloS">Sugestões de roteiros de podcast<br> para gravação</h1>
+                <p class="textoS">1- Roteiro de Podcast: "Um Apólogo" de Machado de Assis</p>
+            </div>
+            <img class="imgF" src="branco.png" alt="">
+        </section>
+        <section class="textoGrande">
+            <div class="div-textoGrande">
+                <h1 class="tituloB">Introdução:</h1>
+                <p class="textog">•	Locutor: Bem-vindos ao podcast "Histórias que nos Ensinam". Hoje, trazemos uma narrativa especial intitulada "Um Apólogo", que nos convida a refletir sobre o orgulho, a humildade e a importância de cada papel na vida. Vamos mergulhar nessa história encantadora.</p>
+                <h1 class="tituloB">Desenvolvimento:</h1>
+                <p class="textog">Cena 1: A agulha e o novelo de linha</p>
+                <p class="textog">Locutor: Numa saleta de costura, uma agulha e um novelo de linha travam um diálogo acalorado sobre a importância de seus papéis na confecção de vestidos.</p>
+                <p class="textog">Efeitos sonoros: Som de costura, agulha furando o pano.</p>
+                <p class="textog">Cena 2: A chegada da costureira</p>
+                <p class="textog">Locutor: A discussão é interrompida pela chegada da costureira, que assume o controle e começa a costurar o vestido para a baronesa.</p>
+                <p class="textog">Efeitos sonoros: Passos da costureira, sons de vestuário sendo manipulado.</p>
+                <p class="textog">Cena 3: O baile e a ironia da linha</p>
+                <p class="textog">Locutor: Com o vestido pronto, a costureira ironiza a agulha, questionando sua importância no evento social da baronesa.</p>
+                <p class="textog">Efeitos sonoros: Música de baile, vozes distantes, sons de festa.</p>
+                <p class="textog">Cena 4: O conselho do alfinete</p>
+                <p class="textog">Locutor: Um sábio alfinete aconselha a agulha a não se cansar abrindo caminho para outros, revelando uma lição profunda sobre a vida.</p>
+                <p class="textog">Efeitos sonoros: Sussurros, conselhos, som de alfinete.</p>
+                <h1 class="tituloB">Conclusão:</h1>
+                <p class="textog">•	Locutor: E assim, a agulha, a linha e o alfinete nos ensinam valiosas lições sobre humildade, orgulho e a verdadeira importância de cada papel que desempenhamos na vida. Esperamos que essa história tenha tocado seus corações.</p>
+                <h1 class="tituloB">Encerramento:</h1>
+                <p class="textog">•	Locutor: Agradecemos por nos acompanhar neste episódio de "Histórias que nos Ensinam". Se gostou, não se esqueça de compartilhar e deixar seu feedback. Até a próxima!</p>
+                <p class="textog">[Trilha sonora suave de encerramento]</p>
+                <p class="font">Fonte: Contos Consagrados - Machado de Assis - Coleção Prestígio - Ediouro - s/d</p>
+            </div>
+        </section>
+        <section class="textoGrande">
+            <h1 class="segundoTitulo">2. Roteiro de podcast:  Eu sei, mas não devia, de Marina Colasanti </h1>
+            <h1 class="subTi">Título do Podcast: "Desacostumando: Despertando para a Vida Além do Hábito"</h1>
+            <div class="div-textoGrande">
+                <h1 class="tituloB">Introdução:</h1>
+                <p class="textog">•	Locutor: "Bem-vindos ao podcast 'Desacostumando', onde questionamos os hábitos que nos aprisionam e exploramos a vida além da rotina diária. Eu sou [Seu Nome], e hoje vamos refletir sobre como nos acostumamos a viver automaticamente."</p>
+                <h1 class="tituloB">Bloco 1: A Rotina do Automático</h1>
+                <p class="textog">•	Locutor: "É verdade que a vida nos impõe uma série de desafios, e muitas vezes nos acostumamos a aceitar a rotina sem questionar. 'Eu sei que a gente se acostuma. Mas será que não devia?'"</p>
+                <h1 class="tituloB">Bloco 2: O Ciclo Vicioso do Hábito</h1>
+                <p class="textog">•	Locutor: "Nos acostumamos a viver em ambientes limitados, a correr contra o tempo, a aceitar a guerra como algo distante. Mas até que ponto isso é saudável? Estamos presos em um ciclo vicioso que nos impede de viver plenamente."</p>
+                <h1 class="tituloB">Bloco 3: Despertando Consciência</h1>
+                <p class="textog">•	Locutor: "Abrir os olhos para a vida além dos hábitos é o primeiro passo para a mudança. Como podemos nos libertar do automatismo e redescobrir a beleza do sol, do ar, da amplidão? É hora de despertar para a consciência."</p>
+                <h1 class="tituloB">Bloco 4: Quebrando Paradigmas</h1>
+                <p class="textog">•	Locutor: "Neste bloco, vamos discutir como podemos quebrar os padrões estabelecidos, questionar as normas sociais e buscar um significado mais profundo para nossas ações diárias. Afinal, a vida é mais do que pagar contas e seguir o fluxo."</p>
+                <h1 class="tituloB">Conclusão:</h1>
+                <p class="textog">•	Locutor: "Obrigado por se juntar a nós neste episódio de 'Desacostumando'. Desafie-se a questionar, a sair da zona de conforto e a redescobrir a vida para além dos hábitos. Eu sou [Seu Nome], e lembre-se: a verdadeira vida está esperando por você além do que se tornou habitual."</h1>
+                <h1 class="tituloB">Encerramento:</h1>
+                <p class="textog">•	Locutor: "Se você gostou deste episódio, não se esqueça de se inscrever e deixar seu comentário. Fique ligado para mais reflexões sobre quebrar padrões e viver uma vida mais autêntica. Até a próxima edição de 'Desacostumando'."</p>
+                <p class="font">COLASANTI, Marina. Eu sei, mas não devia. Jornal do Brasil: Revista de Domingo, Rio de Janeiro, n. 157, 24 set.1972, p. 10. Disponível em: < http://bndigital.bn.br/hemeroteca-digital > Acesso em: 26/01/2024</p>
+            </div>
+        </section>
+        <section class="fundo2">
+            <div>
+                <h1 class="tituloCafe">Roteiro 3 : Café do Caparaó</h1>
+                <h1 class="subtCafe">Título do Podcast: "Café do Caparaó: <br>Uma Jornada Aromática pelas Montanhas"</h1>
+            </div>
+            <img class="fundoC" src="16252443980xdPfPrzzt.jpg" alt="caparao">
+        </section>
+        <section class="textoGrande">
+            
+            <div class="div-textoGrande">
+                <h1 class="tituloB">Introdução:</h1>
+                <p class="textog">•	Locutor: "Olá, amantes do café! Sejam bem-vindos a mais um episódio do nosso podcast, onde exploramos os segredos e delícias do mundo do café. Eu sou [Seu Nome], e hoje vamos embarcar em uma jornada única pelas montanhas do Caparaó, conhecendo o extraordinário 'Café do Caparaó'."</p>
+                <h1 class="tituloB">Bloco 1: As Origens do Café no Caparaó</h1>
+                <p class="textog">•	Locutor: "Para começar, vamos mergulhar nas origens desse café especial. O que faz o café do Caparaó tão único? Como as condições geográficas e climáticas das montanhas contribuem para essa experiência sensorial inigualável?"</p>
+                <h1 class="tituloB">Bloco 2: O Processo de Cultivo e Colheita</h1>
+                <p class="textog">•	Locutor: "No segundo bloco, vamos explorar o cuidadoso processo de cultivo e colheita do café no Caparaó. Como os agricultores locais se dedicam a garantir a qualidade excepcional dos grãos? E como a altitude das montanhas influencia o sabor do café?"</p>
+                <h1 class="tituloB">Bloco 3: Da Plantação à Xícara: A Jornada do Café</h1>
+                <p class="textog">•	Locutor: "Agora, vamos acompanhar a jornada do café desde a plantação até a xícara. Como os grãos são processados e torrados para preservar suas características únicas? E qual é o papel dos produtores locais nesse processo?"</p>
+                <h1 class="tituloB">Bloco 4: Perfis de Sabor e Notas Aromáticas</h1>
+                <p class="textog">•	Locutor: "Preparem seus sentidos! No quarto bloco, vamos explorar os perfis de sabor e as notas aromáticas que tornam o café do Caparaó uma verdadeira experiência gourmet. De nuances frutadas a toques amadeirados, cada xícara é uma viagem de sabores."</p>
+                <h1 class="tituloB">Bloco 5: Sustentabilidade e Impacto Social</h1>
+                <p class="textog">•	Locutor: "Além do sabor excepcional, o café do Caparaó também destaca-se por práticas sustentáveis e impacto social positivo. Descubra como a produção desse café contribui para o desenvolvimento local e a preservação ambiental."</h1>
+                <h1 class="tituloB">Conclusão:</h1>
+                <p class="textog">•	Locutor: "Chegamos ao final desta jornada aromática pelo 'Café do Caparaó'. Espero que tenham desfrutado tanto quanto eu. Se ficou curioso para provar, não se esqueça de buscar esse tesouro nas suas cafeterias favoritas. Eu sou [Seu Nome], e até a próxima xícara!"</p>
+                <h1 class="tituloB">Encerramento:</h1>
+                <p class="textog">•	Locutor: "Se você gostou deste episódio e quer continuar explorando o mundo do café conosco, não se esqueça de se inscrever e deixar seu feedback. Agradecemos a todos os ouvintes fiéis. Até o próximo episódio do 'Explorando o Café'!"</p>
+
+            </div>
+        </section>
+    </main>
+    <footer class="baixo">
+        <div class="backfo">
+            <div>
+                <p class="letra">Conheça meu trabalho </p>
+                <section class="imagens">
+                    <a href="https://www.instagram.com/criatividadedialogica2/"><img class="img_footer" src="instagram.png" alt="inst"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556772900520&mibextid=ZbWKwL"><img class="img_footer" src="facebook.png" alt="facebook"></a>
+                    <a href="https://open.spotify.com/show/3XS2YpdyxJepp1uchK2nWR?si=AaGDQTd-TJqRi4_aApYYJw&nd=1&dlsi=cd945a7f5d904057"><img class="img_footer" src="spotify.png" alt="spotify"></a>
+                </section>
+            </div>
+            <div class="credi">
+                <p class="letra">Créditos</p>
+                <p class="creditos">Desenvolvedor: Samuel Muzy Fernandes</p>
+                <a class="creditos" href="https://storyset.com/social-media">Social media illustrations by Storyset</a>
+                <p class="creditos">Imagem de <a class="creditos" href="https://pixabay.com/pt/users/gdj-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Gordon Johnson</a> por <a class="creditos" href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1237265">Pixabay</a></p>
+                <a class="creditos" href="https://www.flaticon.com/br/icones-gratis/instagram" title="instagram ícones">Instagram ícones criados por Freepik - Flaticon</a>
+            </div>
+            <div class="ifs">
+                <img class="img2" src="ifs.png" alt="logo">
+                <img class="img2" src="logo.png" alt="logo">
+            </div>
+            
+        </div>
+    </footer>
+    <script defer src="modulo3.js"></script>
+</body>
+</html>
